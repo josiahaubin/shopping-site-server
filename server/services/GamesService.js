@@ -7,7 +7,7 @@ const _model = new Schema({
     coverImg: { type: String, default: 'https://image.flaticon.com/icons/png/512/176/176315.png' },
     rating: { type: String, required: true },
     price: { type: Number, required: true },
-    quantity: { type: Number, required: true }
+    quantity: { type: Number, required: true, default: 100 }
 }, { timestamps: true })
 
 export default class GamesService {
