@@ -6,8 +6,8 @@ const _model = new Schema({
     description: { type: String, required: true },
 }, { timestamps: true })
 
-export default class ValueService {
+export default class GamesService {
     get repository() {
-        return mongoose.model('value', _model)
+        return mongoose.model('games', _model)
     }
 }
